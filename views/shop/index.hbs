@@ -1,0 +1,33 @@
+{{#if products}}
+{{#each products}}
+
+<div class="row">
+
+{{#each this}}
+  <div class="col-sm-6 col-md-4 spaceBetweenRows">
+    <div class="card text-center" style="width: 18rem;">
+      <img src="{{this.imagePath}}" class="card-img-top img-responsive" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{this.title}}</h5>
+        <p class="card-text description">{{this.description}}</p>
+        <div>
+          <div class="price">$ {{this.price}}</div>
+            <a href="#" class="btn btn-primary pull-right">View</a>
+          </div>
+        </div>
+      </div>
+  </div>
+  {{else}}
+
+{{/each}}
+  
+</div>
+
+
+{{/each}}
+{{else}}
+<div class="text-center" style="width: 18rem;">
+  {{emptyArr}}
+</div>
+{{/if}}
+

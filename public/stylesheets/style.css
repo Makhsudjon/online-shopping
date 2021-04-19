@@ -1,0 +1,17 @@
+.card img {
+    max-height: 250px;
+    object-fit: contain;
+}
+
+.card .description {
+    color: #7f7f7f;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.spaceBetweenRows {
+    padding-bottom: 20px;
+}
